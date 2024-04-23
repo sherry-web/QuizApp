@@ -1,17 +1,76 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QuizApp</title>
+  <meta charset="UTF-8">
+  <title>The Big 5 Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
+
 <body>
-    <h1>Welcome to the quiz!</h1>
-    <p>Get ready to test your knowledge.</p>
-    <button>Start quiz</button>
-    <img src="" alt="hero image">
+  <div id="question-container">  
+    <div class="form-style">
+      <h1>The Big 5 Quiz</h1>
+      <h2>Test your General Knowledge</h2>
 
+      <form id="quiz-form">
+        <fieldset>
 
+          <!--SECTION ONE GEOGRAPHY - THE BIG 5!-->
+          <legend><span class="number"><strong>1</strong></span> The Big 5 - Geography</legend>
 
-    <script src="script.js"></script>
+          <!-- Updated Questions -->
+          <label for="q1" class= "text-label">1) Which African country is famous for its diverse wildlife and is home to the "Big Five" animals?</label>
+          <input type="text" name="q1" id="q1" placeholder="Your Answer">
+
+          <!-- Continue with updated questions for Section One -->
+
+          <!--SECTION TWO MATHS - THE BIG 5!-->
+          <legend><span class="number"><strong>2</strong></span> The Big 5 - Maths</legend>
+
+          <!-- Updated Questions -->
+          <label for="q6" class= "text-label">6) What is the mathematical constant representing the ratio of a circle's circumference to its diameter?</label>
+          <input type="text" name="q6" id="q6" placeholder="Your Answer">
+
+          <!-- Continue with updated questions for Section Two -->
+
+          <!--SECTION THREE SCIENCE - THE BIG 5!-->  
+          <legend><span class="number"><strong>3</strong></span> The Big 5 - Science</legend>
+
+          <!-- Updated Questions -->
+          <label for="q11" class= "text-label">11) Which gas do plants absorb during photosynthesis?</label>
+          <input type="text" name="q11" id="q11" placeholder="Your Answer">
+
+          <!-- Continue with updated questions for Section Three -->
+
+          <!--SECTION FOUR HISTORY - THE BIG 5!-->  
+          <legend><span class="number"><strong>4</strong></span> The Big 5 - History</legend>
+
+          <!-- Updated Questions -->
+          <label for="q16" class= "text-label">16) In what year did Nelson Mandela become the first black president of South Africa?</label>
+          <input type="text" name="q16" id="q16" placeholder="Your Answer">
+
+          <!-- Continue with updated questions for Section Four -->
+
+          <!-- Additional Question -->
+          <legend><span class="number"><strong>5</strong></span> Bonus Question</legend>
+          <label for="q21" class="text-label">21) What is the capital city of South Africa?</label>
+          <input type="text" name="q21" id="q21" placeholder="Your Answer">
+
+          <!-- Submit Button -->
+          <button type="button" onclick="myFunction()">Submit</button>
+
+          <p id="result"></p>
+          <p id="answers"></p>
+
+      </form>
+    </div>
+   <script src="script.js"></script>
+  </div>
+ 
 </body>
 </html>
